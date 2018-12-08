@@ -1,4 +1,5 @@
-let upload = require('../lib/s3Functions').upload;
+const uuidv4 = require('uuid/v4');
+let upload = require('../lib/s3Functions').createUploadObject("38267b03-0e97-45aa-a85b-fb3db7def82d", uuidv4(), "png");
 const express = require("express");
 const app = express();
 const port = 3000;
